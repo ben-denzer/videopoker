@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<title>a</title>
+	<link rel="stylesheet" type="text/css" href="videopoker.css" media="all">
+	<script type="text/javascript" src="videopoker2.js"></script>
+</head>
+
+<body>
+	<div id="screen">
+		<div id="table">
+			<table>
+				<tr id="royal">
+					<td class="x1 y1" id="x1y1">ROYAL FLUSH</td>
+					<td class="x2 y1 red" id="x2y1">250</td>
+					<td class="x3 y1" id="x3y1">500</td>
+					<td class="x4 y1" id="x4y1">750</td>
+					<td class="x5 y1" id="x5y1">1000</td>
+					<td class="x6 y1" id="x6y1">4000</td>
+				</tr>
+				<tr id="stflush">
+					<td class="x1 y2" id="x1y2">STRAIGHT FLUSH</td>
+					<td class="x2 y2 red" id="x2y2">50</td>
+					<td class="x3 y2" id="x3y2">100</td>
+					<td class="x4 y2" id="x4y2">150</td>
+					<td class="x5 y2" id="x5y2">200</td>
+					<td class="x6 y2" id="x6y2">250</td>
+				</tr>
+				<tr id="four">
+					<td class="x1 y3" id="x1y3">4 OF A KIND</td>
+					<td class="x2 y3 red" id="x2y3">25</td>
+					<td class="x3 y3" id="x3y3">50</td>
+					<td class="x4 y3" id="x4y3">75</td>
+					<td class="x5 y3" id="x5y3">100</td>
+					<td class="x6 y3" id="x6y3">125</td>
+				</tr>
+				<tr id="full">
+					<td class="x1 y4" id="x1y4">FULL HOUSE</td>
+					<td class="x2 y4 red" id="x2y4">9</td>
+					<td class="x3 y4" id="x3y4">18</td>
+					<td class="x4 y4" id="x4y4">27</td>
+					<td class="x5 y4" id="x5y4">36</td>
+					<td class="x6 y4" id="x6y4">45</td>
+				</tr>
+				<tr id="flush">
+					<td class="x1 y5" id="x1y5">FLUSH</td>
+					<td class="x2 y5 red" id="x2y5">6</td>
+					<td class="x3 y5" id="x3y5">12</td>
+					<td class="x4 y5" id="x4y5">18</td>
+					<td class="x5 y5" id="x5y5">24</td>
+					<td class="x6 y5" id="x6y5">30</td>
+				</tr>
+				<tr id="straight">
+					<td class="x1 y6" id="x1y6">STRAIGHT</td>
+					<td class="x2 y6 red" id="x2y6">4</td>
+					<td class="x3 y6" id="x3y6">8</td>
+					<td class="x4 y6" id="x4y6">12</td>
+					<td class="x5 y6" id="x5y6">16</td>
+					<td class="x6 y6" id="x6y6">20</td>
+				</tr>
+				<tr id="three">
+					<td class="x1 y7" id="x1y7">3 OF A KIND</td>
+					<td class="x2 y7 red" id="x2y7">3</td>
+					<td class="x3 y7" id="x3y7">6</td>
+					<td class="x4 y7" id="x4y7">9</td>
+					<td class="x5 y7" id="x5y7">12</td>
+					<td class="x6 y7" id="x6y7">15</td>
+				</tr>
+				<tr id="two">
+					<td class="x1 y8" id="x1y8">2 PAIR</td>
+					<td class="x2 y8 red" id="x2y8">2</td>
+					<td class="x3 y8" id="x3y8">4</td>
+					<td class="x4 y8" id="x4y8">6</td>
+					<td class="x5 y8" id="x5y8">8</td>
+					<td class="x6 y8" id="x6y8">10</td>
+				</tr>
+				<tr id="pair">
+					<td class="x1 y9" id="x1y9">JACKS OR BETTER</td>
+					<td class="x2 y9 red" id="x2y9">1</td>
+					<td class="x3 y9" id="x3y9">2</td>
+					<td class="x4 y9" id="x4y9">3</td>
+					<td class="x5 y9" id="x5y9">4</td>
+					<td class="x6 y9" id="x6y9">5</td>
+				</tr>
+			</table>
+		</div><!--/table-->
+
+		<div id="cardRow">
+			<div id="print"></div>
+
+			<div class="card" id="c0">
+				<div class="held" id="c0held"></div>
+				<div class="topleft" id="c0topleft"></div>
+				<div class="topsymbol" id="c0topsymbol"></div>
+				<div class="symbol" id="c0symbol"></div>
+				<div class="head" id="c0head"></div>
+			</div>
+			<div class="card" id="c1">
+				<div class="held" id="c1held"></div>
+				<div class="topleft" id="c1topleft"></div>
+				<div class="topsymbol" id="c1topsymbol"></div>
+				<div class="symbol" id="c1symbol"></div>
+				<div class="head" id="c1head"></div>
+			</div>
+			<div class="card" id="c2">
+				<div class="held" id="c2held"></div>
+				<div class="topleft" id="c2topleft"></div>
+				<div class="topsymbol" id="c2topsymbol"></div>
+				<div class="symbol" id="c2symbol"></div>
+				<div class="head" id="c2head"></div>
+			</div>
+			<div class="card" id="c3">
+				<div class="held" id="c3held"></div>
+				<div class="topleft" id="c3topleft"></div>
+				<div class="topsymbol" id="c3topsymbol"></div>
+				<div class="symbol" id="c3symbol"></div>
+				<div class="head" id="c3head"></div>
+			</div>
+			<div class="card" id="c4">
+				<div class="held" id="c4held"></div>
+				<div class="topleft" id="c4topleft"></div>
+				<div class="topsymbol" id="c4topsymbol"></div>
+				<div class="symbol" id="c4symbol"></div>
+				<div class="head" id="c4head"></div>
+			</div>
+			<div id="playMax"><div id="maxTxt">PLAY MAX CREDITS</div></div>
+		</div><!--/cardrow-->
+
+		<div id="winRow">
+			<div id="win"></div>
+			<div id="bet"></div>
+			<div id="money"></div>
+		</div><!--/winrow-->
+
+		<div id="betRow">
+			<div class="button" id="options">DiamondVideoPoker.com</div>
+			<div class="button" id="betOne">BET 2</div>
+			<div class="button" id="middleButton">25&cent;</div>
+			<div class="button" id="maxBet">BET 5</div>
+			<div class="button" id="draw">DEAL</div>
+		</div><!--/betrow-->
+	</div><!--/screen-->
+
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+		var sc_project=10565446;
+		var sc_invisible=1;
+		var sc_security="4ff70194";
+		var scJsHost = (("https:" == document.location.protocol) ?
+		"https://secure." : "http://www.");
+		document.write("<sc"+"ript type='text/javascript' src='" +
+		scJsHost+
+		"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript>
+		<div class="statcounter"><a title="create counter"
+		href="http://statcounter.com/free-hit-counter/"
+		target="_blank"><img class="statcounter"
+		src="http://c.statcounter.com/10565446/0/4ff70194/1/"
+		alt="create counter"></a></div>
+	</noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+	<div id="preload">
+		<img src="images/spades.png" alt="">
+		<img src="images/clubs.png" alt="">
+		<img src="images/hearts.png" alt="">
+		<img src="images/diamonds.png" alt="">
+	</div>
+</body>
+</html>

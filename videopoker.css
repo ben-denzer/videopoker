@@ -1,0 +1,220 @@
+body {
+  background-color: darkgreen;
+  font-family: Arial, Helvettica, sans-serif;
+}
+
+#screen {
+  position: relative;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#table {
+  width: 100%;
+  background-color: blue;
+  font-size: 12pt;
+  font-weight: bold;
+  color: yellow;
+  border: 4px solid yellow;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: right;
+}
+
+.red {
+  background-color: red;
+}
+
+.x1 {
+  text-align: left;
+}
+
+.x1, .x6 {
+  width: 200px;
+
+}
+
+.x2, .x3, .x4, .x5 {
+  width: 15%;
+}
+
+td {
+  border-left: 2px solid yellow;
+  border-right: 2px solid yellow;
+  padding: 0px 4px 0px 4px;
+}
+
+#print {
+  width: 100%;
+  height: 26pt;
+  text-align: center;
+  clear: both;
+  font-size: 24pt;
+  color: yellow;
+  font-weight: bold;
+  margin: 0px auto 15px auto;
+}
+
+#cardRow {
+  width: 100%;
+  text-align: center;
+  border: 4px solid darkgreen;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 189px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px 0px 0px 3%;
+  font-size: 30px;
+  background-image: url('images/cardback.png');
+  cursor: pointer;
+}
+
+#c0 {
+  margin-left: 0px;
+}
+
+.held {
+  position: absolute;
+  margin-top: -27px;
+  left: 32px;
+  font-size: 16pt;
+  font-weight: bold;
+  color: white;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  margin-left: 8px;
+}
+
+.topsymbol {
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+.symbol {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+}
+
+#playMax {
+  position: absolute;
+  top: 310px;
+  left: 259px;
+  height: 45px;
+  width: 450px;
+  color: yellow;
+  font-size: 30pt;
+  font-weight: bold;
+  background-color: darkgreen;
+  z-index: 3;
+}
+
+#winRow {
+  position: relative;
+  width: 100%;
+  font-size: 24pt;
+  font-weight: bold;
+  text-align: center;
+  color: yellow;
+}
+
+#win, #bet, #money {
+  display: inline-block;
+  position: absolute;
+  width: 320px;
+  margin: 0px;
+}
+
+#win {
+  left: 0px;
+  text-align: left;
+}
+
+#bet {
+  left: 324px;
+  text-align: center;
+  color: white;
+}
+
+#money {
+  left: 644px;
+  text-align: right;
+  cursor: pointer;
+}
+
+#betRow {
+  top: 45px;
+  position: relative;
+  clear: both;
+  width: 100%;
+  font-size: 24pt;
+  font-weight: bold;
+  height: 60px;
+}
+
+.button {
+  background-color: yellow;
+  color: black;
+  border-left: 4px solid white;
+  border-top: 4px solid white;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+
+#options, #draw {
+  width: 250px;
+}
+
+#betOne, #maxBet, #middleButton {
+  width: 120px;
+}
+
+#options {
+  position: absolute;
+  font-size: 16pt;
+  font-weight: normal;
+  padding-top: 6px;
+  height: 32px;
+  left: 0px;
+}
+
+#betOne {
+  position: absolute;
+  left: 272px;
+}
+
+#middleButton {
+  position: absolute;
+  color: red;
+  left: 420px;
+}
+
+#maxBet {
+  position: absolute;
+  left: 565px;
+}
+
+#draw {
+  position: absolute;
+  left: 710px;
+}
+
+#preload {
+  display: none;
+}
